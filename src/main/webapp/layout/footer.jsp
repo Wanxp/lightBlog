@@ -36,7 +36,7 @@ pageEncoding="UTF-8" %>
                     </a>
                     <div class="info-text">
                         <p>一生有所追求.</p>
-                        <p>Powered by <a href="https://github.com//tale" target="_blank" rel="nofollow">Tale</a>
+                        <p>Powered by <a href="https://github.com/wanxp/lightBlog" target="_blank" rel="nofollow">Tale</a>
                         </p>
                         <p>&copy; 2017 <a href="https://github.com/biezhi">biezhi</a></p>
                     </div>
