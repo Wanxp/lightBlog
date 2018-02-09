@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>5.0.3.RELEASE</version>
+      <version>4.3.13.RELEASE</version>
     </dependency>
     <!--ORM-->
     <dependency>
@@ -28,7 +28,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.0.3.RELEASE</version>
+      <version>4.3.13.RELEASE</version>
     </dependency>
 
     <!--加入jstl依赖-->
@@ -54,6 +54,30 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.25</version>
+    </dependency>
+    <!-- 加入mysql驱动依赖包 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>6.0.6</version>
+    </dependency>
+    <!--dataSource依赖-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.7</version>
+    </dependency>
+    <!-- sessionFactory依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>4.3.13.RELEASE</version>
+    </dependency>
+    <!-- 面向切面依赖 -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.13</version>
     </dependency>
   </dependencies>
   <build>
