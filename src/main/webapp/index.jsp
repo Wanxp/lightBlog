@@ -1,3 +1,4 @@
+<%@page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +10,16 @@
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="keywords" content="Test"/>
     <meta name="description" content="博客系统,Blade框架,Tale"/>
-    <link rel="shortcut icon" href="http://127.0.0.1:9000/templates/themes/default/static/img/favicon.png"/>
-    <link rel="apple-touch-icon" href="http://127.0.0.1:9000/templates/themes/default/static/img/apple-touch-icon.png"/>
-    <title>跟开涛学 SpringMVC - sunyujing.cn</title>
-    <link href="http://127.0.0.1:9000/templates/themes/default/static/css/xcode.min.css" rel="stylesheet">
-    <link href="http://127.0.0.1:9000/templates/themes/default/static/css/style.min.css" rel="stylesheet">
-    <script src="/static/admin/plugins/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/templates/themes/default/static/img/favicon.png"/>
+    <link rel="apple-touch-icon" href="/templates/themes/default/static/img/apple-touch-icon.png"/>
+    <title>Blog</title>
+    <link href="/templates/themes/default/static/css/xcode.min.css" rel="stylesheet">
+    <link href="/templates/themes/default/static/css/style.min.css" rel="stylesheet">
+    <link href="/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/jplayer/jquery.jplayer.min.js"></script>
+    <resource  src="/examples/resource/WolfgangAmadeusMozart-SonateinF-DurKV3322.Satz.mp3"/>
+    <%--<script src="/static/admin/plugins/jquery/3.2.1/jquery.min.js"></script>--%>
 
 
     <!--[if lt IE 9]>
@@ -30,13 +35,13 @@
 <![endif]-->
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-        <a href="http://127.0.0.1:9000" class="navbar-logo">
-            <img src="http://127.0.0.1:9000/templates/themes/default/static/img/logo.png" alt="sunyujing.cn"/>
+        <a href="${pageContext.request.contextPath}" class="navbar-logo">
+            <img src="/templates/themes/default/static/img/logo.png" alt="sunyujing.cn"/>
         </a>
         <div class="navbar-menu">
-            <a href="http://127.0.0.1:9000/archives">归档</a>
-            <a href="http://127.0.0.1:9000/links">友链</a>
-            <a href="http://127.0.0.1:9000/about">关于</a>
+            <a href="${pageContext.request.contextPath}/archives">归档</a>
+            <a href="${pageContext.request.contextPath}/links">友链</a>
+            <a href="${pageContext.request.contextPath}/about">关于</a>
         </div>
         <div class="navbar-search" onclick="">
             <span class="icon-search"></span>
@@ -50,9 +55,9 @@
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
-                <li><a href="http://127.0.0.1:9000/archives">归档</a></li>
-                <li><a href="http://127.0.0.1:9000/links">友链</a></li>
-                <li><a href="http://127.0.0.1:9000/about">关于</a></li>
+                <li><a href="${pageContext.request.contextPath}/archives">归档</a></li>
+                <li><a href="${pageContext.request.contextPath}/links">友链</a></li>
+                <li><a href="${pageContext.request.contextPath}/about">关于</a></li>
             </ul>
         </div>
     </div>
@@ -60,7 +65,7 @@
 <article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
     <div class="post-header">
         <h1 class="post-title" itemprop="name headline">
-            <a href="http://127.0.0.1:9000/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
+            <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
         </h1>
         <div class="post-data">
             <time datetime="2018-02-01" itemprop="datePublished">发布于 2018-02-01</time>
@@ -69,7 +74,7 @@
         </div>
     </div>
     <div id="post-content" class="post-content" itemprop="articleBody">
-        <p class="post-tags"><a href="/tag/Test">Test</a></p>
+        <p class="post-tags"><a href="/musicController/manager">Test</a></p>
         <p>#Test1
             ##Test2
             ###Test3
@@ -221,8 +226,8 @@
         <div class="footer-container">
             <div class="meta-item meta-copyright">
                 <div class="meta-copyright-info">
-                    <a href="http://127.0.0.1:9000" class="info-logo">
-                        <img src="/templates/themes/default/static/img/logo.png" alt="sunyujing.cn">
+                    <a href="${pageContext.request.contextPath}" class="info-logo">
+                        <img src="${pageContext.request.contextPath}/templates/themes/default/static/img/logo.png" alt="sunyujing.cn">
                     </a>
                     <div class="info-text">
                         <p>一生有所追求.</p>
@@ -236,17 +241,17 @@
             <div class="meta-item meta-posts">
                 <h3 class="meta-title">最新文章</h3>
                 <li>
-                    <a href="http://127.0.0.1:9000/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
+                    <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
                 </li>
                 <li>
-                    <a href="http://127.0.0.1:9000/article/2">第一篇文章</a>
+                    <a href="${pageContext.request.contextPath}/article/2">第一篇文章</a>
                 </li>
             </div>
 
             <div class="meta-item meta-comments">
                 <h3 class="meta-title">最新评论</h3>
                 <li>
-                    <a href="http://127.0.0.1:9000/article/4#comment-1">00：000ggggg</a>
+                    <a href="${pageContext.request.contextPath}/article/4#comment-1">00：000ggggg</a>
                 </li>
             </div>
         </div>
@@ -347,9 +352,9 @@
     };
     postDirectoryBuild();
 </script>
-<script src="http://127.0.0.1:9000/templates/themes/default/static/js/headroom.min.js"></script>
+<script src="${pageContext.request.contextPath}/templates/themes/default/static/js/headroom.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="http://127.0.0.1:9000/templates/themes/default/static/js/instantclick.min.js"></script>
+<script src="${pageContext.request.contextPath}/templates/themes/default/static/js/instantclick.min.js"></script>
 <script type="text/javascript">
     var postDirectory = new Headroom(document.getElementById("directory-content"), {
         tolerance: 0,
