@@ -1,12 +1,12 @@
 package com.wanxp.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 public class Objectx {
 
 	/**
 	 * 日志记录
 	 */
-	public Logger logger = LoggerFactory.getLogger(this.getClass());
+//	public Logger logger = LoggerFactory.getLogger(this.getClass());
 }

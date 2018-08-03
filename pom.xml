@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>5.0.3.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <!--ORM-->
     <dependency>
@@ -25,10 +25,32 @@
       <artifactId>hibernate-core</artifactId>
       <version>4.2.2.Final</version>
     </dependency>
+        <!-- DataBase数据库连接 mysql包-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.12</version>
+    </dependency>
+    <!-- 数据库连接池-->
+    <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>4.3.18.RELEASE</version>
+    </dependency>
+
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.0.3.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
 
     <!--加入jstl依赖-->
@@ -56,10 +78,11 @@
       <artifactId>fastjson</artifactId>
       <version>1.2.46</version>
     </dependency>
+    <!-- log4j -->
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.25</version>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <!-- 加入druid数据源依赖包 -->
     <dependency>
