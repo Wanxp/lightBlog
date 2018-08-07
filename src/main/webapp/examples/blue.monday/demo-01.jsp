@@ -6,9 +6,9 @@
 <!-- Website Design By: www.happyworm.com -->
 <title>Demo : jPlayer as an audio player</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="${pageContext.request.contextPath}/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="${pageContext.request.contextPath}/lib/jquery.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/dist/jplayer/jquery.jplayer.min.js"></script>
+<link href="/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/dist/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 $(document).ready(function(){
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		ready: function (event) {
 			$(this).jPlayer("setMedia", {
 				title: "Bubble",
-                mp3: "${pageContext.request.contextPath}/examples/resource/WolfgangAmadeusMozart-SonateinF-DurKV3322.Satz.mp3",
+                mp3: "/examples/resource/Wolfgang.mp3"
 				// m4a: "http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
 				// oga: "http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
 			});
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		end: function (event) {
 			$(this).jPlayer("play");
         },
-		swfPath: "${pageContext.request.contextPath}/dist/jplayer",
+		swfPath: "/dist/jplayer",
 		supplied: "m4a, oga, mp3",
 		wmode: "window",
 		useStateClassSkin: true,
@@ -35,6 +35,7 @@ $(document).ready(function(){
 		remainingDuration: true,
 		toggleDuration: true
 	});
+	setImmediate(function (args) {  })
 });
 //]]>
 </script>

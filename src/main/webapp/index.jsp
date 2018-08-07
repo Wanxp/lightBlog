@@ -65,7 +65,7 @@
 <article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
     <div class="post-header">
         <h1 class="post-title" itemprop="name headline">
-            <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
+            <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">SpringMVC</a>
         </h1>
         <div class="post-data">
             <time datetime="2018-02-01" itemprop="datePublished">发布于 2018-02-01</time>
@@ -94,9 +94,9 @@
     <div class="bottom-bar-inner">
         <div class="bottom-bar-items social-share left">
             <span class="bottom-bar-item">Share : </span>
-            <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:9000/article/wodeyiyifenwenhzng" target="_blank" title="跟开涛学 SpringMVC" rel="nofollow">facebook</a></span>
-            <span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:9000/article/wodeyiyifenwenhzng&text=跟开涛学 SpringMVC" target="_blank" title="跟开涛学 SpringMVC" rel="nofollow">Twitter</a></span>
-            <span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url=http://127.0.0.1:9000/article/wodeyiyifenwenhzng&amp;title=跟开涛学 SpringMVC" target="_blank" title="跟开涛学 SpringMVC" rel="nofollow">Weibo</a></span>
+            <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:9000/article/wodeyiyifenwenhzng" target="_blank" title="主题" rel="nofollow">facebook</a></span>
+            <span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:9000/article/wodeyiyifenwenhzng&text=内容" target="_blank" title="SpringMVC" rel="nofollow">Twitter</a></span>
+            <span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url=http://127.0.0.1:9000/article/wodeyiyifenwenhzng&amp;title=SpringMVC" target="_blank" title="SpringMVC" rel="nofollow">Weibo</a></span>
             <span class="bottom-bar-item bottom-bar-qrcode"><a href="//pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=http://127.0.0.1:9000/article/wodeyiyifenwenhzng" target="_blank" rel="nofollow">QRcode</a></span>
         </div>
         <div class="bottom-bar-items right">
@@ -241,7 +241,7 @@
             <div class="meta-item meta-posts">
                 <h3 class="meta-title">最新文章</h3>
                 <li>
-                    <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">跟开涛学 SpringMVC</a>
+                    <a href="${pageContext.request.contextPath}/article/wodeyiyifenwenhzng">SpringMVC</a>
                 </li>
                 <li>
                     <a href="${pageContext.request.contextPath}/article/2">第一篇文章</a>
