@@ -35,7 +35,22 @@ $(document).ready(function(){
 		remainingDuration: true,
 		toggleDuration: true
 	});
-	setImmediate(function (args) {  })
+	var palyFlag = false;
+	function setTimePlay() {
+        var date = new Date();
+        if (date > new Date('2018-08-07 21:36:00') & !palyFlag) {
+            console.log("---------paly----------");
+            play();
+            palyFlag = true;
+		}
+        return undefined;
+    };
+    setInterval(setTimePlay, 10);
+
+
+	function play(args) {
+        $("#jquery_jplayer_1").jPlayer("play");
+	}
 });
 //]]>
 </script>
